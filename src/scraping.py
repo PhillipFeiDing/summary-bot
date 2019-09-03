@@ -10,7 +10,7 @@ def get_FRIENDS_transcript():
     link_pattern = "season/\d\d\d\d\.html"
     label_pattern = "\d\d\d\d"
     save_dir = "html/FRIENDS/transcript/"
-    save_name = "transript.json"
+    save_name = "transcript.json"
 
     scraper = HtmlScraper()
 
@@ -44,7 +44,7 @@ def get_FRIENDS_summary():
 
     root_url = "http://www.friends-tv.org/epshort.html"
     save_dir = "html/FRIENDS/summary/"
-    save_name = "sumamry.json"
+    save_name = "summary.json"
 
     scraper = HtmlScraper()
 
@@ -59,6 +59,7 @@ def get_FRIENDS_summary():
     print("Saving...")
     scraper.save(json_str, save_dir + save_name)
     print("Done.")
+
 
 if __name__ == "__main__":
     # get_FRIENDS_transcript()
